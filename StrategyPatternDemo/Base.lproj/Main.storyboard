@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTi-jQ-ob2">
+                                <rect key="frame" x="159" y="309" width="46" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b9S-rO-ZIh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="od9-od-XQ6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-un-PGw" customClass="CunstomTextFiled">
+                                <rect key="frame" x="53" y="210" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="MDg-rw-78m"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-Mh-us4" customClass="CunstomTextFiled">
+                                <rect key="frame" x="57" y="271" width="260" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HTi-jQ-ob2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="4u5-hq-Emb"/>
+                            <constraint firstItem="2AV-Mh-us4" firstAttribute="width" secondItem="Fhn-un-PGw" secondAttribute="width" id="Hj4-vM-i50"/>
+                            <constraint firstItem="HTi-jQ-ob2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lxs-mW-Gsa"/>
+                            <constraint firstItem="Fhn-un-PGw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-108.5" id="Mmn-Yu-mM0"/>
+                            <constraint firstItem="Fhn-un-PGw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="YTZ-Gw-C4r"/>
+                            <constraint firstItem="2AV-Mh-us4" firstAttribute="height" secondItem="Fhn-un-PGw" secondAttribute="height" id="Z7a-RR-58Q"/>
+                            <constraint firstItem="2AV-Mh-us4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="cLn-UG-gqz"/>
+                            <constraint firstItem="2AV-Mh-us4" firstAttribute="top" secondItem="Fhn-un-PGw" secondAttribute="bottom" constant="31" id="foo-2X-7SM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HTi-jQ-ob2" secondAttribute="trailing" constant="20" symbolic="YES" id="wj9-pr-BTK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="letterInput" destination="Fhn-un-PGw" id="fd4-FJ-lFp"/>
+                        <outlet property="numberInput" destination="2AV-Mh-us4" id="dd6-l4-GGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
